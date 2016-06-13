@@ -7,7 +7,7 @@
         maxWait="5000" 
         name="jdbc/CarsDS" 
         username="root" 
-        password="admin" 
+        password="root" 
         type="javax.sql.DataSource" 
         url="jdbc:mysql://localhost:3306/cartestdrive" 
         validationQuery="SELECT 1">

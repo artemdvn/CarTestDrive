@@ -40,6 +40,14 @@ public class ManagementSystem {
         }
         return instance;
     }
+    
+    public static synchronized ManagementSystem getInstance(Connection connection) {
+        if (instance == null) {
+        	instance = new ManagementSystem();
+            con = connection;
+        }
+        return instance;
+    }
 
     public List<Showroom> getShowrooms() throws SQLException {
         List<Showroom> showrooms = new ArrayList<Showroom>();
