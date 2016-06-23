@@ -3,22 +3,24 @@ package car.web;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import car.web.forms.MainFrameForm;
-import car.web.forms.ShowroomForm;
-import car.web.forms.ShowroomListForm;
-import car.logic.Car;
 import car.logic.ManagementSystem;
 import car.logic.Showroom;
-import car.web.forms.CarForm;
+import car.web.forms.ShowroomForm;
+import car.web.forms.ShowroomListForm;
 
+@WebServlet(
+	    name = "ShowroomListServlet",
+	    description = "Showroom list servlet",
+	    urlPatterns = {"/showrooms"}
+	)
 public class ShowroomListServlet extends HttpServlet
 {
     protected void processRequest(HttpServletRequest req, HttpServletResponse resp)

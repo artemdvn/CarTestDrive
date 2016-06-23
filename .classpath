@@ -22,6 +22,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/H2/bin/h2-1.4.192.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Apache/apache-tomcat-7.0.69/lib/h2-1.4.192.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

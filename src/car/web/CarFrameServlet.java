@@ -1,15 +1,13 @@
 package car.web;
 
 import java.io.IOException;
-import java.sql.Date;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 import java.text.ParseException;
-import java.util.Calendar;
 import java.util.Collection;
 import java.util.Iterator;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,6 +17,11 @@ import car.logic.ManagementSystem;
 import car.logic.Showroom;
 import car.web.forms.MainFrameForm;
 
+@WebServlet(
+	    name = "CarFrameServlet",
+	    description = "Car frame servlet",
+	    urlPatterns = {"/edit"}
+	)
 public class CarFrameServlet extends HttpServlet
 {
     protected void processRequest(HttpServletRequest req, HttpServletResponse resp)

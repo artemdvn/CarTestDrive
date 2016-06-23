@@ -19,23 +19,7 @@
     <servlet>
         <servlet-name>ShowroomFrameServlet</servlet-name>
         <servlet-class>car.web.ShowroomFrameServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>MainFrameServlet</servlet-name>
-        <url-pattern>/main</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CarFrameServlet</servlet-name>
-        <url-pattern>/edit</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ShowroomListServlet</servlet-name>
-        <url-pattern>/showrooms</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ShowroomFrameServlet</servlet-name>
-        <url-pattern>/edit_showroom</url-pattern>
-    </servlet-mapping>
+    </servlet>    
     <resource-ref>
         <description>DB Connection</description>
         <res-ref-name>jdbc/CarsDS</res-ref-name>

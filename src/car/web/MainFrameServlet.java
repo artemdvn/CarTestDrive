@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,6 +18,11 @@ import car.logic.ManagementSystem;
 import car.logic.Showroom;
 import car.web.forms.CarForm;
 
+@WebServlet(
+	    name = "MainFrameServlet",
+	    description = "Main frame servlet",
+	    urlPatterns = {"/main"}
+	)
 public class MainFrameServlet extends HttpServlet
 {
     protected void processRequest(HttpServletRequest req, HttpServletResponse resp)
